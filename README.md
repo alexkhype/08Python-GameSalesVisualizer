@@ -11,37 +11,38 @@
 - [Contacto](#Contacto)
 
 ## Descripción
-XXXX Este proyecto analiza un conjunto de datos históricos de ventas de videojuegos para comprender las preferencias de los consumidores, identificar tendencias por plataforma, región y género, y generar recomendaciones para estrategias de mercado en la industria del entretenimiento.
+Análisis integral de patrones que determinan el éxito en ventas de videojuegos para la tienda online ICE, utilizando datos históricos hasta 2016 para pronosticar ventas 2017 y optimizar campañas de marketing.
 
 ## Datos
-Se utilizaron XXX conjuntos de datos principales:  
-- XXXX **games.csv**: Contiene registros de ventas por juego, plataforma, año, y regiones (Norteamérica, Europa, Japón, y resto del mundo).  
-- XXXX **scraping.csv**: Dataset auxiliar para completar datos faltantes.  
+Se utilizó un onjunto de datos principal:  
+- **games.csv**: Contiene registros de ventas por juego, plataforma, año, y regiones (Norteamérica, Europa, Japón, y resto del mundo), calificaciones de críticos, usuarios, y rating. 
 
 Características clave incluyen:  
-- XXXX 16,500 registros históricos.  
-- XXXX Variables: nombre, plataforma, año, género, clasificación ESRB, ventas por región, calificaciones de críticos y usuarios.  
-- XXXX Datos limpios y normalizados para análisis.  
+- 16,715 registros históricos.  
+- Variables: nombre, plataforma, año, género, clasificación ESRB, ventas por región, calificaciones de críticos y usuarios.  
+- Datos limpios y normalizados para análisis.  
 
 ## Análisis
 El enfoque incluyó:  
-- XXXX Análisis exploratorio para identificar tendencias de ventas por región y género.  
-- XXXX Visualizaciones para descubrir patrones.  
-- XXXX Modelado predictivo simple para estimar ventas futuras basado en variables históricas.  
-- XXXX Validación cruzada para evaluar modelos.  
+- Estudio de ciclos de vida de generaciones de plataformas, identificando tendencias y puntos máximos de ventas.
+- Evaluación del comportamiento de ventas y rentabilidad de las principales plataformas (PS4, X-One, 3DS, WiiU, PC).
+- Análisis de correlaciones entre ventas totales y reseñas de críticos y usuarios.
+- Perfilamiento regional de ventas por plataforma, género y clasificación ESRB en Norteamérica, Europa y Japón.
+- Comparación estadística para validar diferencias significativas en calificaciones de usuarios entre plataformas y géneros.
 
 ## Tecnologías y herramientas
-- XXXX Python 3.9  
-- XXXX Pandas, NumPy para manipulación de datos  
-- XXXX Matplotlib, Seaborn para visualización  
-- XXXX Scikit-learn para modelado predictivo  
-- XXXX Jupyter Notebook para desarrollo interactivo  
+- Python 3.9 para programación general y análisis de datos
+- Pandas y NumPy para manipulación y procesamiento de datos
+- Matplotlib y Seaborn para visualización estadística y exploratoria
+- SciPy para análisis estadístico avanzado
+- Jupyter Notebook para desarrollo interactivo y presentación de resultados
 
 ## Resultados
-- XXXX Los géneros Action y Sports lideran ventas globales.  
-- XXXX Norteamérica y Europa son los mercados con mayor volumen.  
-- XXXX Modelos predictivos lograron un R2 medio de 0.75 en test set.  
-- XXXX Recomendaciones para enfocar nuevos lanzamientos en plataformas con crecimiento positivo.  
+- PS4 lidera en ventas globales y en mercados de NA y UE, mientras que 3DS domina en Japón; PC y X-One son menos aceptadas en Japón.
+- Géneros de acción y disparos concentran más del 49% de las ventas globales, mientras que RPG domina en el mercado japonés.
+- Clasificación ESRB M es la más vendida globalmente, aunque con baja aceptación en Japón donde predomina la clasificación E.
+- Correlación moderada positiva entre ventas y reseñas de críticos; reseñas de usuarios muestran correlación muy débil con ventas.
+- Se confirma diferencia significativa en calificaciones de usuarios entre géneros Acción y Deportes, pero no entre Xbox One y PC.
 
 ## Contribuciones
 Bienvenidas sugerencias, correcciones y nuevas visualizaciones. Por favor, abre un issue o pull request para colaborar.
